@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(void) {
+  /** Write a program that is able to grade students according to the 
+     *scores they got displaying their details too
+    */
+  char Grade;
+  int score;
+
+
+  printf("\nEnter the score:");
+  scanf("%d",&score);
+
+  switch (score)
+    {
+      case 70 ... 100:
+        printf("A\n");
+       break;
+      case 60 ... 69:
+        printf("B\n");
+       break;
+      case 50 ... 59:
+        printf("C\n");
+       break;
+      case 40 ... 49:
+        printf("D\n");
+       break;
+      case 30 ... 39:
+        printf("E\n");
+       break;
+      case 0 ... 29:
+        printf("F\n");
+      break;
+    }
+  
+  return (0);
+}
+

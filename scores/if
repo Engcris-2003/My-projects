@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main(void) {
+  /** Write a program that is able to grade students according to the 
+     *scores they got displaying their details too
+    */
+  char Grade;
+  int score;
+
+
+  printf("\nEnter the score:");
+  scanf("%d",&score);
+
+  /**when the student get
+    *70-100 is "A"
+    *60-69 is "B"
+    *50-59 is "C"
+    *40-49 is "D"
+    *30-39 is "E"
+    *0-29 is "FAIL"
+    */
+
+    if (score >= 70 && score <=100)
+  {
+    printf("A");
+  }
+  else if (score >= 60 && score <= 69)
+  {
+    printf("B");
+  }
+  else if (score >= 50 && score <= 59)
+  {
+    printf("C");
+  }
+  else if(score >= 40 && score >= 49)
+  {
+    printf("D");
+  }
+  else if (score >= 30 && score >= 39)
+  {
+    printf("E");
+  }
+  else
+  {
+    printf("FAIL");
+  }
+  
+  return (0);
+}
